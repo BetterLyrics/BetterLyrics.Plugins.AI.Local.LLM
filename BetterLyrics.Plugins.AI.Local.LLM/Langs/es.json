@@ -1,0 +1,10 @@
+{
+  "Config_ModelPath_Name": "Model Path",
+  "Config_ModelPath_Desc": "Input model absolute uri here",
+  "Config_ContextSize_Name": "Context Size",
+  "Config_ContextSize_Desc": "Set the context size for the model",
+  "Config_GpuLayerCount_Name": "GPU Layer Count",
+  "Config_GpuLayerCount_Desc": "Set the number of layers to offload to GPU. Set 0 to use CPU only.",
+  "Config_Threads_Name": "Threads",
+  "Config_Threads_Desc": "Set the number of threads to use for inference"
+}

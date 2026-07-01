@@ -8,10 +8,21 @@
 		<Version>1.0.0</Version>
 		<Authors>jayfunc</Authors>
 		<Company>$(Authors)</Company>
-		<Copyright>Copyright © 2026 jayfunc</Copyright>
+		<Copyright>Copyright © 2026 $(Authors)</Copyright>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<BetterLyricsHostDir>D:\Workspace\BetterLyrics</BetterLyricsHostDir>
 	</PropertyGroup>
 
 	<ItemGroup>
+		<None Update="Langs\*.json">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BetterLyrics.DevTools" Version="1.0.1" />
 		<PackageReference Include="BetterLyrics.Sdk" Version="1.0.0" />
 		<PackageReference Include="LLamaSharp" Version="0.27.0" />
 		<PackageReference Include="LLamaSharp.Backend.Vulkan.Windows" Version="0.27.0" />
